@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "server": "bun run --watch server/index.ts",
+    "build-server": "bun build --minify --outfile dist/server.js --target bun server/index.ts",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
