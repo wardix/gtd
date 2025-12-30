@@ -37,6 +37,10 @@ const port = Number(process.env.PORT) || 3001;
 const startServer = async () => {
     try {
         await connectDB();
+        Bun.serve({
+            port,
+            fetch: app.fetch,
+        });
         console.log(`🚀 Server running on http://localhost:${port}`);
     } catch (error) {
         console.error('Failed to start server:', error);
@@ -45,8 +49,3 @@ const startServer = async () => {
 };
 
 startServer();
-
-export default {
-    port,
-    fetch: app.fetch,
-};
