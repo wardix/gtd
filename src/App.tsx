@@ -118,7 +118,7 @@ function App() {
   return (
     <div className="flex h-screen overflow-hidden bg-background dark">
       <Sidebar currentView={currentView} onViewChange={setCurrentView} />
-      <main className="flex-1 overflow-auto">{renderView()}</main>
+      <main className="flex-1 overflow-auto pt-14 md:pt-0">{renderView()}</main>
       <Toaster />
     </div>
   )
