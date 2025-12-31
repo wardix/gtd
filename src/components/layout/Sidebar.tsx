@@ -157,15 +157,15 @@ export function Sidebar({ currentView, onViewChange }: SidebarProps) {
     return (
         <>
             {/* Mobile Header Bar */}
-            <div className="md:hidden fixed top-0 left-0 right-0 z-50 flex h-14 items-center justify-between px-4 border-b border-border/40 bg-card/95 backdrop-blur-xl">
+            <div className="md:hidden fixed top-0 left-0 right-0 z-50 flex h-14 items-center justify-between px-4 border-b border-border/40 bg-card/50 backdrop-blur-xl">
                 <Sheet open={mobileOpen} onOpenChange={setMobileOpen}>
                     <SheetTrigger asChild>
-                        <Button variant="ghost" size="icon">
+                        <Button variant="ghost" size="icon" className="text-foreground">
                             <Menu className="h-5 w-5" />
                         </Button>
                     </SheetTrigger>
-                    <SheetContent side="left" className="w-72 p-0">
-                        <SheetHeader className="p-4 border-b">
+                    <SheetContent side="left" className="w-72 p-0 bg-card/50 backdrop-blur-xl border-r border-border/40">
+                        <SheetHeader className="p-4 border-b border-border/40">
                             <SheetTitle className="text-xl font-bold bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
                                 GTD Flow
                             </SheetTitle>
