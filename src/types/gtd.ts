@@ -85,6 +85,6 @@ export const REVIEW_STEPS = [
   'Review Next Actions - Are they still relevant?',
   'Review Projects - Update status and add new actions',
   'Review Waiting For - Follow up if needed',
-  'Review Someday/Maybe - Move items to active if ready',
+  'Review Someday - Move items to active if ready',
   'Capture new ideas - Anything on your mind?',
 ]

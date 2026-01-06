@@ -83,7 +83,7 @@ export function Review() {
         </Card>
         <Card className="p-4">
           <p className="text-2xl font-bold">{stats.somedayMaybe}</p>
-          <p className="text-xs text-muted-foreground">Someday/Maybe</p>
+          <p className="text-xs text-muted-foreground">Someday</p>
         </Card>
       </div>
 
@@ -139,13 +139,12 @@ export function Review() {
                   return (
                     <div
                       key={index}
-                      className={`flex items-start gap-3 p-4 rounded-lg border transition-colors ${
-                        isCurrent
+                      className={`flex items-start gap-3 p-4 rounded-lg border transition-colors ${isCurrent
                           ? 'border-primary bg-primary/5'
                           : isCompleted
                             ? 'bg-muted/50'
                             : ''
-                      }`}
+                        }`}
                     >
                       <Checkbox
                         checked={isCompleted}

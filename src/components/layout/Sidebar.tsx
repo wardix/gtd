@@ -83,7 +83,7 @@ export function Sidebar({ currentView, onViewChange }: SidebarProps) {
         },
         {
             id: 'someday-maybe' as View,
-            label: 'Someday/Maybe',
+            label: 'Someday',
             icon: Lightbulb,
             count: somedayMaybe.length,
         },

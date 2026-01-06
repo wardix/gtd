@@ -109,7 +109,7 @@ export function SomedayMaybe() {
       {/* Header */}
       <div className="flex items-start justify-between">
         <div>
-          <h2 className="text-3xl font-bold tracking-tight">Someday/Maybe</h2>
+          <h2 className="text-3xl font-bold tracking-tight">Someday</h2>
           <p className="text-muted-foreground">
             Ideas and possibilities for the future
           </p>
@@ -123,7 +123,7 @@ export function SomedayMaybe() {
           </DialogTrigger>
           <DialogContent>
             <DialogHeader>
-              <DialogTitle>Add Someday/Maybe Item</DialogTitle>
+              <DialogTitle>Add Someday Item</DialogTitle>
             </DialogHeader>
             <div className="space-y-4">
               <Input
